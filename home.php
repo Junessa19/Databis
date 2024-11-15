@@ -50,20 +50,29 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory Dashboard</title>
+    <title>Bahian Bakery</title>
     <link rel="stylesheet" href="styles.css">  <!-- Link to your CSS file -->
 </head>
 <body>
     <div class="dashboard">
-        <h1>Inventory Dashboard</h1>
+        <h1>Bahian Bakery</h1>
         
         <?php if (isset($message)) { echo "<p class='message'>$message</p>"; } ?>
 
         <!-- Add Product Form -->
         <div class="add-product-form">
-            <h2>Add Product</h2>
+            <h2>Bread</h2>
             <form method="POST" action="">
-                <input type="text" name="product_name" placeholder="Product Name" required>
+                <input type="text" name="Star Bread" placeholder="Product Name" required>
+                <textarea name="description" placeholder="Description" required></textarea>
+                <input type="number" name="quantity" placeholder="Quantity" required>
+                <input type="number" name="price" placeholder="Price" step="0.01" required>
+                <button type="submit" name="add_product">Add Product</button>
+            </form>
+        </div>
+
+            <form method="POST" action="">
+                <input type="text" name="Pande Coco" placeholder="Product Name" required>
                 <textarea name="description" placeholder="Description" required></textarea>
                 <input type="number" name="quantity" placeholder="Quantity" required>
                 <input type="number" name="price" placeholder="Price" step="0.01" required>
@@ -97,7 +106,8 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <!-- Update Quantity Form -->
                                 <form method="POST" action="" style="display: inline;">
                                     <input type="number" name="quantity" placeholder="New Quantity" required>
-                                    <input type="hidden" name="product_id" value="<?= $product['id']; ?>">
+                                    <input type="hid
+                                    den" name="product_id" value="<?= $product['id']; ?>">
                                     <button type="submit" name="update_quantity">Update</button>
                                 </form>
                             </td>
