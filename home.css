@@ -12,7 +12,7 @@ body {
     width: 90%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ff9292;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -27,7 +27,7 @@ body {
 
 /* Form Styles */
 .add-product-form {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .add-product-form h2 {
@@ -63,18 +63,23 @@ body {
     background-color: #0056b3;
 }
 
-/* Product List Table */
-.product-list table {
-    width: 100%;
-    border-collapse: collapse;
+/* Product List Styles */
+.product-list {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
+}
+
+.product-list table {
+    width: 90%; /* Adjust table width if needed */
+    border-collapse: collapse;
     font-size: 1em;
 }
 
 .product-list table th, 
 .product-list table td {
     padding: 10px;
-    text-align: left;
+    text-align: center;
     border: 1px solid #ddd;
 }
 
@@ -92,5 +97,9 @@ body {
     .dashboard {
         width: 100%;
         padding: 10px;
+    }
+
+    .product-list table {
+        width: 100%; /* Ensure it adjusts on smaller screens */
     }
 }

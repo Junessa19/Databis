@@ -39,13 +39,13 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory Dashboard</title>
+    <title>BAHIAN BAKERY SHOP</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="dashboard">
-        <h1>Inventory Dashboard</h1>
+        <h1>BAKED BABE BAKERY</h1>
         
         <?php if (isset($message)) { echo "<p class='message'>$message</p>"; } ?>
 
