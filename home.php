@@ -3,9 +3,9 @@ session_start();
 
 // Database connection details
 $host = 'localhost';
-$db = 'junessa'; // Replace with your database name
-$user = 'root';  // Replace with your database username
-$pass = '';      // Replace with your database password
+$db = 'junessa'; // database name
+$user = 'root';  
+$pass = '';      
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
